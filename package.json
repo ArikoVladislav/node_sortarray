@@ -1,0 +1,11 @@
+{
+    "name": "node_sortarray",
+    "version": "1.0.0",
+    "description": "",
+    "main": "sort-array.js",
+    "dependencies": {
+        "comander": "0.0.1-security",
+        "commander": "^8.3.0",
+        "has-flag": "^5.0.1"
+    }
+}

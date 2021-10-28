@@ -29,7 +29,7 @@ const actions = async _ => {
 process.stdin.setEncoding('utf8');
 
 program
-   .requiredOption('-a --action <action>', 'An action remove')
+  .requiredOption('-a --action <action>', 'An action remove')
   .option('-i, --input <filename>', 'An input file')
   .option('-o --output <filename>', 'An output file')
   .action(actions)
