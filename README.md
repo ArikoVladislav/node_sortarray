@@ -21,7 +21,7 @@ CLI tool accept 3 options (short alias and full name):
 2. -o, --output: an output file
 3. -a, --action: an action complete
 
-Uncollapse || MattrixAddition input.txt to output.txt:
+Remove || Sort input.txt to output.txt:
 ```
 $ node cli -i "./input.txt" -o "./output.txt" -a remove
 ```
