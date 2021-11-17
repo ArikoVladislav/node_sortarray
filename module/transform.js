@@ -1,6 +1,6 @@
 const { Transform } = require('stream');
 
-const {RemoveDuplicate} = require('./code');
+const {RemoveDuplicate, SortMass} = require('./code');
 
 class RemoveTransform extends Transform {
     constructor(action) {
@@ -13,8 +13,10 @@ class RemoveTransform extends Transform {
   
       switch (this.action) {
         case 'remove':
-          result = RemoveDuplicate(chunk.toString('uint8_t'));
+          result = RemoveDuplicate(chunk.toString('utf8'));
           break;
+        case 'sort':
+          result = SortMass(chunk.toString('utf8'));
         default:
           process.stderr.write(' Erorr: Action not found\n');
           process.exit(1);
@@ -25,3 +27,4 @@ class RemoveTransform extends Transform {
     }
   }
   module.exports = RemoveTransform;
+  

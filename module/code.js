@@ -23,3 +23,46 @@
   
 //     return result;
 //   }
+module.exports.RemoveDuplicate = function RemoveDuplicate(arr) {
+    let array = JSON.parse(arr);
+    let result = [];
+    array.forEach(element => {
+    let answer = [];
+    for (let str of element) {
+    if (!answer.includes(str)) {
+    answer.push(str);
+    }
+    }
+    result.push(answer.join(''));
+    });
+    return JSON.stringify(result);
+    }
+    
+//     module.exports.SortMass = function SortMass(arr){
+//     const odd = arr.filter(i => i%2 !== 0).sort();
+//     let i = 0,
+//     result = [];
+//     arr.forEach(e => {
+//     if (e%2 === 0) {
+//     result.push(e)
+//   } else {
+//     result.push(odd[i]);
+//     i++;
+//     }
+//     });
+//     return result;
+//     }
+module.exports.SortMass = function SortMass(arr){
+    // for (let i=0; i=arr.Lenght;i++){
+    //     for (let j=0; j=arr.Lenght;j++){
+    //          if(arr[i]% 2 == 1 && arr[j]% 2 == 1 && arr[i] > arr[j]){
+    //             var temp = arr[i];
+    //             arr[i] = arr[j];
+    //             arr[j] = temp;
+    //          }
+    //     }
+    // }
+    forEach
+    result=arr;
+    return result;
+}
