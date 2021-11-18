@@ -17,6 +17,7 @@ class RemoveTransform extends Transform {
           break;
         case 'sort':
           result = SortMass(chunk.toString('utf8'));
+          break;
         default:
           process.stderr.write(' Erorr: Action not found\n');
           process.exit(1);
