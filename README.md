@@ -38,5 +38,8 @@ $ node cli -a sort
 
 For action remove need enter text through "," , for example:
 
-["bye","hello"] -> ["bye",helo"]
+["abracadabra","allottee","assessee"] -> ['abracadabra','alote','asese']
 
+For action sort need enter text through "," , for example:
+
+[9, 8, 7, 6, 5, 4, 3, 2, 1, 0] -> [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
